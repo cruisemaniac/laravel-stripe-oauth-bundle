@@ -1,5 +1,10 @@
 <?php
 
+	require_once(Bundle::path('laravel-stripe-oauth-bundle').'oauth2-php/lib/OAuth2.php');
+	require_once(Bundle::path('laravel-stripe-oauth-bundle').'oauth2-php/lib/OAuth2Client.php');
+	require_once(Bundle::path('laravel-stripe-oauth-bundle').'oauth2-php/lib/IOAuth2Storage.php');
+	require_once(Bundle::path('laravel-stripe-oauth-bundle').'oauth2-php/lib/IOAuth2GrantCode.php');
+
     // include the Stripe version of the OAuth2 Client
     require_once('StripeOAuth2Client.class.php');
 
